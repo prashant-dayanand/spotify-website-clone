@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musicofy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <h1>Musicofy</h1>
+          </div>
+          <div class="menu">
+            <ul class="menu-item">
+              <li><a href="/premium.html">Premium</a></li>
+              <li><a href="/support.html">Support</a></li>
+              <li><a href="/download.html">Download</a></li>
+              <li><a href="/signup.html">Signup</a></li>
+              <li><a href="/login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class="bars">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="download-page">
+      <div class="container">
+        <h2 class="download-title">Musicofy for Linux</h2>
+        <p>
+          Here you can find different ways of installing Spotify for Linux.
+          Spotify for Linux is a labor of love from our engineers that wanted to
+          listen to Spotify on their Linux development machines. They work on it
+          in their spare time and it is currently not a platform that we
+          actively support. The experience may differ from our other Spotify
+          Desktop clients, such as Windows and Mac. You can tell us what you
+          think and ask other users for help at the Desktop (Linux) board in The
+          Spotify Community forum.
+        </p>
+        <h3>Install on Ubuntu</h3>
+        <p>Install via snap</p>
+        <h6 class="download-cli">snap install musicofy</h6>
+        <h3>Debian/Ubuntu</h3>
+        <p>
+          Musicofy for Linux is also released as a Debian package. Our aim is
+          that it should work with the latest Long Term Support release of
+          Ubuntu, but we will try to make it work for other releases of Ubuntu
+          and Debian as well.
+        </p>
+        <h6 class="download-cli">
+          curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg |
+          sudo apt-key add -
+        </h6>
+        <h6 class="download-cli">
+          echo "deb http://repository.spotify.com stable non-free" | sudo tee
+          /etc/apt/sources.list.d/spotify.list
+        </h6>
+        <p>Then you can install the Musicofy client:</p>
+        <h6 class="download-cli">
+          sudo apt-get update && sudo apt-get install spotify-client
+        </h6>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <div class="left-footer">
+            <div class="footer-1">
+              <h2>Company</h2>
+              <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">For the Record</a>
+              </div>
+            </div>
+            <div class="footer-1">
+              <h2>Community</h2>
+              <div class="footer-links">
+                <a href="#">For Artist</a>
+                <a href="#">Developers</a>
+                <a href="#">Investors</a>
+                <a href="#">Vendors</a>
+                <a href="#">Advertising</a>
+              </div>
+            </div>
+            <div class="footer-1">
+              <h2>Company</h2>
+              <div class="footer-links">
+                <a href="#">Support</a>
+                <a href="#">Web Player</a>
+                <a href="#">Free Mobile App</a>
+              </div>
+            </div>
+          </div>
+          <div class="right-footer">
+            <div>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="about-links">
+          <div class="left-about">
+            <a href="">Legal</a>
+            <a href="">Privacy Center</a>
+            <a href="">Privacy Policy</a>
+            <a href="">About Ads</a>
+            <a href="">Cookies</a>
+          </div>
+          <div class="right-about">
+            <p>@copyright 2021 Musicofy Inc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
